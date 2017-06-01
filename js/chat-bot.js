@@ -17,7 +17,7 @@ function chatBot() {
 	
 		this.input = input.toLowerCase();
 		
-		if(this.match('(hi|hello|hey|hola|howdy)(\\s|!|\\.|$)'))
+		if(this.match('(ciao)'))
 			return "um... hi?";
 		
 		if(this.match('what[^ ]* up') || this.match('sup') || this.match('how are you'))
@@ -29,7 +29,7 @@ function chatBot() {
 		if(this.match('^no+(\\s|!|\\.|$)'))
 			return "don't be such a negative nancy :(";
 		
-		if(this.match('(cya|bye|see ya|ttyl|talk to you later)'))
+		if(this.match('(meta|bye|see ya|ttyl|talk to you later)'))
 			return ["alright, see you around", "good teamwork!"];
 		
 		if(this.match('(dumb|stupid|is that all)'))
