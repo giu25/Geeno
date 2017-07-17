@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>chat-bot</title>
+		<title>Geeno</title>
 		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
 	</head>
 	<body>
 		<div class="container">
-			<h1 class="title">chat-bot</h1>
+			<h1 class="title">Geeno</h1>
 			<div class="chat"></div>
 			<div class="busy"></div>
 			<div class="input">
-				<input type="text" placeholder="Chat with me!" />
-				<a>Send</a>
+				<input value="" id="box" type="text" placeholder="Richiesta" />
+				<i class="fa fa-microphone fa-lg" onclick="start()"></i>
+				<a onclick="stop()">Invia</a>
 			</div>
 		</div>
 		<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
 		<script type="text/javascript" src="js/chat-bot.js"></script>
 		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/voice.js"></script>
 	</body>
 </html>

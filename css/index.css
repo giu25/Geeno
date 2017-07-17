@@ -24,6 +24,7 @@ body {
 }
 
 .chat {
+	background-image: url('../mandala.jpg');
 	border: 1px solid #ccc;
 	height: 400px;
 	overflow-y: scroll;
@@ -32,8 +33,10 @@ body {
 }
 
 .chat div {
-	margin: 10px 12px 15px;
-	line-height: 20px;
+	display: inline-block;
+	margin: 10px 10px;
+    border-radius: 20px;
+	padding: 2%;
 }
 
 .chat .party {
@@ -41,15 +44,11 @@ body {
 }
 
 .chat .you {
-	color: red;
+	color: rgb(233, 64, 67);
 }
 
 .chat .other {
-	color: blue;
-}
-
-.chat .text {
-	
+	color: #2A91A8;;
 }
 
 .chat .pic {
@@ -69,10 +68,6 @@ body {
 	font-size: 11px;
 }
 
-.input {
-	margin-top: 20px;
-}
-
 .input input {
 	vertical-align: top;
 	float: left;
@@ -88,14 +83,54 @@ body {
 	float: right;
 	font-weight: bold;
 	border: 1px solid #ccc;
-	background-color: #efefef;
+	background-color: #2A91A8;
 	padding: 7px 35px;
-	color: black;
+	color: white;
 	text-decoration: none;
-	border-radius: 5px;
+	border-radius: 20px;
+	text-transform: uppercase;
+	margin-top: 1%;
 }
 
 .input a:hover {
 	background-color: #ddd;
 	cursor: pointer;
+}
+
+.fa-lg{
+    margin-left: -27px;
+	margin-top: 7px;
+    padding: 6px;
+	color:#2A91A8;
+}
+
+#box {
+	border: none;
+    border-bottom: 1px solid #dcdcdc;
+    background-color: transparent;
+	height: 40px;
+}
+
+#box:focus {
+	outline-color: transparent;
+    border-bottom: 1px solid #2A91A8;
+}
+
+.input input:focus {
+	border-top: none;
+}
+
+hr{
+	border-width: 0px;
+} 
+
+.balloon-other {
+	background-color: #BBDEFB;
+	opacity: 0.9;
+}
+
+.balloon-you {
+	float: right;
+	background-color: #1BC98E;
+	opacity: 0.9;
 }

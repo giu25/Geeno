@@ -2,7 +2,7 @@ $(function() {
 
 	// chat aliases
 	var you = 'You';
-	var robot = 'Buddy';
+	var robot = 'Geeno';
 	
 	// slow reply by 400 to 800 ms
 	var delayStart = 400;
@@ -49,8 +49,9 @@ $(function() {
 			style = 'other';
 		}
 		
-		var line = $(`<div><div class="pic"></div><span class="party"></span> <span class="text"></span></div>`);
+		var line = $(`<div class="balloon"><span class="party"></span> <span class="text"></span></div><hr>`);
 		line.find('.party').addClass(style).text(party + ':');
+		line.addClass("balloon-"+style);
 		line.find('.text').text(text);
 		
 		chat.append(line);
@@ -68,6 +69,6 @@ $(function() {
 	$('.input a').bind('click', submitChat);
 	
 	// initial chat state
-	updateChat(robot, 'Hi there. Try typing something!');
+	updateChat(robot, 'Serve una mano ?');
 
 });
